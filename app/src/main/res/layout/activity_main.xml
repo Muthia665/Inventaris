@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:background="@drawable/background_gradient">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INVENTARIS"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text=" ID Buku :"
+            android:id="@+id/txtId"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/edtId"
+            android:layout_marginLeft="5dp"
+            android:hint="Masukan ID Buku"
+            android:inputType="number"
+
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text=" Judul    :"
+            android:id="@+id/txtNama"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtNama"
+            android:hint="Masukan Judul Buku"
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text=" Penulis :"
+            android:id="@+id/txtPenulis"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtPenulis"
+                android:hint="Masukan Penulis Buku"
+                android:inputType="text"
+                android:layout_marginLeft="5dp"
+                android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textStyle="italic"
+             android:text=" Penerbit :"
+             android:id="@+id/txtPenerbit"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtPenerbit"
+                android:hint="Masukan Penerbit Buku"
+                android:inputType="text"
+                android:layout_marginLeft="5dp"
+                android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text=" Dirilis    : "
+            android:id="@+id/txtDirilis"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtTahun"
+                android:hint="Masukan Tahun Rilis"
+                android:inputType="text"
+                android:layout_marginLeft="5dp"
+                android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_weight="1"
+            android:text=" Kategori :"
+            android:id="@+id/txtKategori"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Kategori Buku"
+            android:layout_marginRight="5dp"
+            android:id="@+id/edtKategori"
+            android:textStyle="italic"
+            android:inputType="text"
+            android:layout_weight="4"
+            android:enabled="false"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PILIH"
+            android:id="@+id/btnPilih"
+            android:textStyle="italic"
+            android:layout_weight="1"
+            android:background="@drawable/background_edit_text"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTambah"
+        android:text="TAMBAH"
+        android:background="@drawable/background_edit_text"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLihat"
+        android:text="LIHAT"
+        android:background="@drawable/background_edit_text"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        android:text="UPDATE"
+        android:background="@drawable/background_edit_text"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>
